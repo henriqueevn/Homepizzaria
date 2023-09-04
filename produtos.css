@@ -1,0 +1,119 @@
+body, h1, h2, p, img, ul, li, form, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+  background-image: url(img/pizzaria.jpg);
+  backdrop-filter: blur(7px);
+}
+
+header {
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 2px;
+}
+
+nav a:active{
+  border-color: red;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.menu-item {
+  width: 200px;
+  height: 400px;
+  background-color: #f2f2f2ef;
+  border: 1px solid #ddd;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  transition: transform 0.3s, border-color 0.3s;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.m:hover, .p:hover, .g:hover {
+  transform: scale(1.45) rotate(360deg);
+  transition-duration: 3s;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+  border-color: red;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.87);
+}
+
+.menu-item:active {
+  border-color: red;
+}
+
+.menu-item h2 {
+  margin: 0;
+}
+
+.p{
+  width: 160px;
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+}
+
+.m{
+  width: 180px;
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+}
+
+.g{
+  width: 200px;
+  margin: 0 auto;
+}
+
+.preco {
+  text-align: center;
+  font-weight: 600;
+  padding: 3px;
+  color: white;
+  border-radius: 30px;
+  background-color: red;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
